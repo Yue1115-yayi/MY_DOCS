@@ -1,0 +1,9 @@
+site_name: 我的技术文档
+nav:
+    - 首页: index.md
+    - 第一页: page1.md
+
+theme:
+    name: material  # 使用流行的 material 主题
+
+# 本地预览文档：mkdocs serve
