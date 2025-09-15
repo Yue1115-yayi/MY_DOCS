@@ -1,0 +1,4 @@
+mkdocs>=1.4.0
+mkdocs-material
+# 如果您使用了其他插件，请取消注释并添加下面一行
+# mkdocs-minify-plugin
