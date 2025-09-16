@@ -4,7 +4,7 @@
 
 ### 准备工作
 > Vscode + Git + Python <br>
-> Github[https://github.com/Yue1115-yayi/MY_DOCS/actions] + Netlify[https://app.netlify.com/teams/yue1115-yayi/projects] <br>
+> Github + Netlify <br>
 > MkDocs
 
 ### 步骤一
@@ -102,11 +102,11 @@ jobs:
 ```
 
 #### 在 GitHub 上配置 Secrets
-1. 配置NETLIFY_AUTH_TOKEN<br>
+- 配置NETLIFY_AUTH_TOKEN<br>
 进入Github my_docs仓库，进入Settings -> Secrets and variables -> Actions -> New repository secret。<br>
-Name: NETLIFY_AUTH_TOKEN; Value: 步骤二复制的Auth Token
+Name: NETLIFY_AUTH_TOKEN; Value: 步骤二复制的Auth Token <br>
 
-2. 配置NETLIFY_SITE_ID<br>
+- 配置NETLIFY_SITE_ID<br>
 进入Netlify，选择Import an existing project，GitHub授权。<br>
 在配置界面：Build command: mkdocs build；Publish directory: site，点击deploy site。
 回到这个site details页面，找到并复制Site ID。
