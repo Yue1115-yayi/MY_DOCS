@@ -59,7 +59,7 @@ git remote add origin https://github.com/你的用户名/my-docs.git # clone自�
 git branch -M main # 将本地的 main 分支推送到远程 origin 仓库，并设置上游追踪
 git push -u origin main
 ```
-### 步骤五 配置自动化
+### 步骤四 配置自动化
 #### 创建 GitHub Actions 工作流文件
 在VSCode .github/workflows/ 目录下创建一个新文件，命名为 ci-cd.yml。
 ```bash
@@ -102,17 +102,17 @@ jobs:
 ```
 
 #### 在 GitHub 上配置 Secrets
-- 配置NETLIFY_AUTH_TOKEN<br>
+- 配置`NETLIFY_AUTH_TOKEN`<br>
 进入Github my_docs仓库，进入Settings -> Secrets and variables -> Actions -> New repository secret。<br>
-Name: NETLIFY_AUTH_TOKEN; Value: 步骤二复制的Auth Token <br>
+Name: `NETLIFY_AUTH_TOKEN`; Value: 步骤二复制的`Auth Token` <br>
 
-- 配置NETLIFY_SITE_ID<br>
+- 配置`NETLIFY_SITE_ID`<br>
 进入Netlify，选择Import an existing project，GitHub授权。<br>
-在配置界面：Build command: mkdocs build；Publish directory: site，点击deploy site。
+在配置界面：Build command: `mkdocs build`；Publish directory: `site`，点击deploy site。
 回到这个site details页面，找到并复制Site ID。
-重复步骤一，再次add New repository secret。Name: NETLIFY_SITE_ID; Value: 刚刚复制的Site ID。
+重复步骤一，再次add New repository secret。Name: `NETLIFY_SITE_ID`; Value: 刚刚复制的`Site ID`。
 
-### 步骤六 测试与验证
+### 步骤五 测试与验证
 修改md文件活任意一个文件，在vscode commit changes，或者在终端提交并推送这个更改：
 ```bash
 git add docs/index.md

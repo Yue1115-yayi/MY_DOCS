@@ -1,10 +1,16 @@
 site_name: 个人博客
 nav:
     - 首页: index.md
-    - 第一页: page1.md
-    - 第二页: page2.md
+    - 流程图: page1.md
+    - tbd: page2.md
+
+plugins:
+  - search  # 保留默认搜索插件
+  - mermaid2  # 启用 Mermaid 插件
 
 theme:
-    name: material  # 使用流行的 material 主题
+  name: material
+  features:
+    - content.code.copy  # 可选：代码复制按钮
 
 # 本地预览文档：mkdocs serve
