@@ -8,7 +8,6 @@
 
 - [基于 GitHub Actions + Netlify 的自动化文档流水线](development/cicd.md) - 2025-09-20
 
-[查看所有文章 →](archive.md)
 <!-- 
 ---
 
