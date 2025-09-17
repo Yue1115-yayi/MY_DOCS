@@ -1,16 +1,69 @@
+# site_name: 个人博客
+# nav:
+#     - 首页: index.md
+#     - 流程图: page1.md
+#     - tbd: page2.md
+
+# plugins:
+#   - search  # 保留默认搜索插件
+#   - mermaid2  # 启用 Mermaid 插件
+
+# theme:
+#   name: material
+#   features:
+#     - content.code.copy  # 可选：代码复制按钮
+
+# # 本地预览文档：mkdocs serve
+
 site_name: 个人博客
+site_description: 分享技术写作、文档工具和开发实践
+
 nav:
-    - 首页: index.md
-    - 流程图: page1.md
-    - tbd: page2.md
+  - 首页: index.md
+  
+  - 技术写作:
+    - 写作技巧: technical-writing/techniques.md
+    - 文档规范: technical-writing/standards.md
+    - 案例研究: technical-writing/case-studies.md
+  
+  - 工具评测:
+    - 文档工具比较: tools/documentation-tools.md
+    - API文档工具: tools/api-tools.md
+    - 绘图与图表工具: tools/diagram-tools.md
+  
+  - 开发实践:
+    - CI/CD流水线: development/cicd.md
+    - 流程图: development/diagram.md
+  
+  - 职业成长:
+    - 技能提升: career/skills.md
+    - 资源推荐: career/resources.md
+  
+  - 关于我: about.md
+  - 归档: archive.md
 
 plugins:
-  - search  # 保留默认搜索插件
-  - mermaid2  # 启用 Mermaid 插件
+  - search
+  - mermaid2
+  - blog  # 可选：添加博客功能插件
 
 theme:
   name: material
   features:
-    - content.code.copy  # 可选：代码复制按钮
-
-# 本地预览文档：mkdocs serve
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
