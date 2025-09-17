@@ -40,7 +40,6 @@ nav:
     - 资源推荐: career/resources.md
   
   - 关于我: about.md
-  - 归档: archive.md
 
 plugins:
   - search
