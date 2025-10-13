@@ -8,6 +8,16 @@
 
 - [基于 GitHub Actions + Netlify 的自动化文档流水线](development/cicd.md) - 2025-09-20
 
+---
+
+## 📧 联系我  
+- **邮箱**: [1049429452@qq.com](mailto:1049429452@qq.com) 
+- **GitHub**: [@Yue1115-yayi](https://github.com/Yue1115-yayi)  
+
+---
+
+*本文档内容由个人整理撰写，转载请注明出处。*
+
 <!-- 
 ---
 

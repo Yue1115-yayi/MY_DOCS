@@ -2,7 +2,7 @@
 
 基于 GitHub Actions + Netlify 的自动化文档流水线
 
-### 概览
+### [概览](diagram.md)
 - **本地开发**：在 VSCode 中编写 Markdown 文档，使用 MkDocs 进行本地构建和预览。
 - **版本控制**：通过 Git 管理文档变更。
 - **自动化构建与部署**：GitHub Actions 自动构建，Netlify 自动部署。
